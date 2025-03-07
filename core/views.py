@@ -11,7 +11,6 @@ from django.views.decorators.csrf import csrf_exempt
 import pdfkit
 from .models import Item
 
-@csrf_exempt
 def generate_receipt(request):
     if request.method == 'POST':
         try:
